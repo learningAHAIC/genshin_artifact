@@ -7,7 +7,9 @@ import {{ c.name }}_splash from "@image/characters/{{ c.name }}_splash"
 
 // const template = "https://upload-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_#.png?x-oss-process=image/crop,w_200,h_200,y_5,g_north"
 const template = "https://upload-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_#.png?x-oss-process=image/crop,w_200,h_200,y_5,g_north"
-const newTemplate = "https://act-webstatic.mihoyo.com/hk4e/e20200928calculate/item_icon_u9b0pg/#.png?x-oss-process=image/crop,w_200,h_200,y_5,g_north"
+// OLD!!: const newTemplate = "https://act-webstatic.mihoyo.com/hk4e/e20200928calculate/item_icon_u9b0pg/#.png?x-oss-process=image/crop,w_200,h_200,y_5,g_north"
+// 从米游舍的养成计算器爬来的
+const newTemplate = "https://act-webstatic.mihoyo.com/hk4e/e20200928calculate/item_icon/#.png?x-oss-process=image/crop,w_200,h_200,y_5,g_north"
 const getName = name => template.replace("#", name)
 const getHash = hash => newTemplate.replace("#", hash)
 
@@ -21,11 +23,11 @@ export default {
         star: {{ c.star }},
         // card: {{ c.name }}_card,
         // avatar: {{ c.name }}_avatar,
-        {% if c.icon_hash == "" -%}
-        avatar: getName("{{ c.internal_name }}"),
-        {% else -%}
+        // {% if c.icon_hash == "" -%}
+        // avatar: getName("{{ c.internal_name }}"),
+        // {% else -%}
         avatar: getHash("{{ c.icon_hash }}"),
-        {%- endif %}
+        // {%- endif %}
         splash: {{ c.name }}_splash,
         skillName1: {{ c.skill1_name_index }},
         skillName2: {{ c.skill2_name_index }},
