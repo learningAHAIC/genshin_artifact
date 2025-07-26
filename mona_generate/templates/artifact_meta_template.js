@@ -1,7 +1,7 @@
-// const template = "https://upload-bbs.mihoyo.com/game_record/genshin/equip/#.png"
+const template = "https://upload-bbs.mihoyo.com/game_record/genshin/equip/#.png"
 // const newTemplate = "https://act-webstatic.mihoyo.com/hk4e/e20200928calculate/item_icon_u9b0pg/#.png"
 const newTemplate = "https://act-webstatic.mihoyo.com/hk4e/e20200928calculate/item_icon/#.png"
-// const getIcon = name => template.replace("#", name)
+const getIcon = name => template.replace("#", name)
 const getHash = hash => newTemplate.replace("#", hash)
 
 export default {

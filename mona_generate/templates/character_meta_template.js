@@ -5,7 +5,6 @@
 import {{ c.name }}_splash from "@image/characters/{{ c.name }}_splash"
 {% endfor %}
 
-// const template = "https://upload-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_#.png?x-oss-process=image/crop,w_200,h_200,y_5,g_north"
 const template = "https://upload-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_#.png?x-oss-process=image/crop,w_200,h_200,y_5,g_north"
 // OLD!!: const newTemplate = "https://act-webstatic.mihoyo.com/hk4e/e20200928calculate/item_icon_u9b0pg/#.png?x-oss-process=image/crop,w_200,h_200,y_5,g_north"
 // 从米游舍的养成计算器爬来的
